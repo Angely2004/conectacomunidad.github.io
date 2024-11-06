@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foro - Conecta Comunidad</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #fff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+            background-color: #000;
+            position: relative;
+        }
+
+        .navbar img {
+            max-width: 200px;  /* Limita el tamaño máximo del logo */
+            height: auto;
+            margin-bottom: 20px;  /* Añade un espacio debajo del logo */
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #FFF;
+            text-decoration: none;
+            font-size: 18px;
+            padding-bottom: 5px;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #9c4be7;
+            border-bottom: 2px solid #9c4be7;
+        }
+
+        .user-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            border: 2px solid #FFF;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .user-icon img {
+            width: 20px;
+            height: 20px;
+        }
+
+        /* Foro Header */
+        .foro-header {
+            text-align: center;
+            font-size: 32px;
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        /* Foro Container */
+        .foro-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .foro-card {
+            background-color: #222;
+            width: 80%;
+            max-width: 800px;
+            margin: 10px 0;
+            padding: 15px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+        }
+
+        .foro-card img {
+            width: 120px;
+            height: 80px;
+            border-radius: 10px;
+            object-fit: cover;
+        }
+
+        .foro-content {
+            margin-left: 15px;
+            flex: 1;
+        }
+
+        .foro-title {
+            font-size: 20px;
+            color: #9c4de4;
+            font-weight: bold;
+        }
+
+        .foro-description {
+            font-size: 14px;
+            color: #ccc;
+            margin: 5px 0;
+        }
+
+        .foro-button {
+            display: inline-block;
+            background-color: #9c4de4;
+            color: #fff;
+            padding: 8px 16px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        .add-topic {
+            display: inline-block;
+            background-color: #9c4de4;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <img src="logo.png" alt="Conecta Comunidad Logo">
+        <!-- Barra de navegación -->
+        <nav class="navbar">
+            <div class="nav-links">
+                <a href="bienvenido.html" class="active">inicio</a> &nbsp;
+                <a href="proyectos.html">proyectos</a> &nbsp;
+                <a href="foro.html">foro</a> &nbsp;
+                <a href="chat.html">chat</a> &nbsp;
+                <a href="contactanos.html">contactanos</a> &nbsp;
+                <a href="ayuda.html">ayuda</a>
+            </div>
+        </nav>
+        <div class="user-icon">
+            <img src="user-icon.png" alt="User Icon">
+        </div>
+    </header>
+
+    <!-- Foro Header -->
+    <h1 class="foro-header">Foro</h1>
+
+    <!-- Foro Container -->
+    <div class="foro-container">
+        <!-- Foro Card -->
+        <div class="foro-card">
+            <img src="salud-bienestar.jpg" alt="Salud y bienestar">
+            <div class="foro-content">
+                <div class="foro-title">Salud y bienestar</div>
+                <div class="foro-description">La nutrición adecuada, la salud mental, la gestión del estrés...</div>
+                <a href="#" class="foro-button">VER MÁS</a>
+            </div>
+        </div>
+
+        <div class="foro-card">
+            <img src="cultura-sociedad.jpg" alt="Cultura y sociedad">
+            <div class="foro-content">
+                <div class="foro-title">Cultura y sociedad</div>
+                <div class="foro-description">Explorar y discutir diversos aspectos de la cultura y la sociedad...</div>
+                <a href="#" class="foro-button">VER MÁS</a>
+            </div>
+        </div>
+
+        <div class="foro-card">
+            <img src="educacion.jpg" alt="Educación">
+            <div class="foro-content">
+                <div class="foro-title">Educación</div>
+                <div class="foro-description">Conocimientos sobre métodos educativos, experiencias y estrategias...</div>
+                <a href="#" class="foro-button">VER MÁS</a>
+            </div>
+        </div>
+
+        <div class="foro-card">
+            <img src="emprendimiento.jpg" alt="Emprendimiento">
+            <div class="foro-content">
+                <div class="foro-title">Emprendimiento</div>
+                <div class="foro-description">Los aspirantes a emprendedores y propietarios de pequeños negocios...</div>
+                <a href="#" class="foro-button">VER MÁS</a>
+            </div>
+        </div>
+
+        <!-- Añadir Nuevo Tema Button -->
+        <a href="#" class="add-topic">AÑADIR NUEVO TEMA</a>
+    </div>
+
+</body>
+</html>
+

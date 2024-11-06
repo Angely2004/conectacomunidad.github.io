@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta Comunidad - Proyectos</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #FFF;
+            text-decoration: none;
+            font-size: 18px;
+            padding-bottom: 5px;
+        }
+
+        nav a:hover,
+        nav a.active {
+            color: #9c4be7;
+            border-bottom: 2px solid #9c4be7;
+        }
+
+        .header {
+            margin: 20px 0;
+        }
+
+        .header img {
+            width: 150px;
+        }
+
+        .projects-section {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+        }
+
+        .category {
+            width: 300px;
+            text-align: left;
+        }
+
+        .category h3 {
+            text-transform: uppercase;
+            color: #fff;
+        }
+
+        .project-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+            background-color: #333;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        .project-item img {
+            width: 50px;
+            height: 50px;
+            border-radius: 8px;
+            margin-right: 15px;
+        }
+
+        .project-description {
+            color: #ddd;
+        }
+
+        .view-more-btn {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            text-align: center;
+            background-color: #A95BF5;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            text-decoration: none;
+        }
+
+        .view-more-btn:hover {
+            background-color: #8e4bcc;
+        }
+
+        .profile-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 40px;
+            height: 40px;
+            background-color: #333;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <img src="logo.png" alt="Conecta Comunidad Logo">
+        <!-- Barra de navegación -->
+    <nav class="navbar">
+        <div class="nav-links">
+            <a href="bienvenido.html">inicio</a> &nbsp;
+            <a href="proyectos.html" class="active">proyectos</a> &nbsp;
+            <a href="foro.html">foro</a> &nbsp;
+            <a href="chat.html">chat</a> &nbsp;
+            <a href="contactanos.html">contactanos</a> &nbsp;
+            <a href="ayuda.html">ayuda</a>
+        </div>
+        
+
+    </nav>
+        <div class="user-icon">
+            <img src="user-icon.png" alt="User Icon">
+        </div>
+    </header>
+
+    <div class="projects-section">
+        <div class="category">
+            <h3>Salud</h3>
+            <div class="project-item">
+                <img src="project-image.jpg" alt="Project Image">
+                <p class="project-description">Una salud sin barreras: nueva propuesta para transformar entre todos el Sistema de Salud en Colombia</p>
+            </div>
+            <div class="project-item">
+                <img src="project-image.jpg" alt="Project Image">
+                <p class="project-description">Una salud sin barreras: nueva propuesta para transformar entre todos el Sistema de Salud en Colombia</p>
+            </div>
+            <a href="#" class="view-more-btn">VER MÁS</a>
+        </div>
+
+        <div class="category">
+            <h3>Medio Ambiente</h3>
+            <div class="project-item">
+                <img src="project-image.jpg" alt="Project Image">
+                <p class="project-description">Una salud sin barreras: nueva propuesta para transformar entre todos el Sistema de Salud en Colombia</p>
+            </div>
+            <div class="project-item">
+                <img src="project-image.jpg" alt="Project Image">
+                <p class="project-description">Una salud sin barreras: nueva propuesta para transformar entre todos el Sistema de Salud en Colombia</p>
+            </div>
+            <a href="#" class="view-more-btn">VER MÁS</a>
+        </div>
+
+        <div class="category">
+            <h3>Educación</h3>
+            <div class="project-item">
+                <img src="project-image.jpg" alt="Project Image">
+                <p class="project-description">Una salud sin barreras: nueva propuesta para transformar entre todos el Sistema de Salud en Colombia</p>
+            </div>
+            <div class="project-item">
+                <img src="project-image.jpg" alt="Project Image">
+                <p class="project-description">Una salud sin barreras: nueva propuesta para transformar entre todos el Sistema de Salud en Colombia</p>
+            </div>
+            <a href="#" class="view-more-btn">VER MÁS</a>
+        </div>
+    </div>
+</body>
+</html>
